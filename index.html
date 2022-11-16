@@ -1,0 +1,160 @@
+<!doctype html>
+<html> 
+    <head>
+    <script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <style>
+            body{
+    margin: 0;
+    
+    background: url("/img/pattern.png");
+    font-family: cursive;
+    line-height: 1.5;
+    font-size: 18px;
+    overflow: hidden;
+    height: 100%;
+}   
+.but1{
+    text-align: center;
+    font-size: 50px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: aquamarine;
+    z-index: 4;
+    cursor: pointer;
+}
+.card{
+    width: 400px;
+    height: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    
+    background-color: #fff;
+    box-shadow: 0 5px 10px #ccc;
+    border-radius: 10px;
+}
+.card-photo{
+    display: block;
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 10%;
+}
+.card-title{
+    font-size: 20px;
+    text-align: center;
+    font-family: cursive;
+    color: #ef7373;
+}
+.card-size {
+    font-size: 14px;
+}
+.card-subtitle{
+    font-size: 18px;
+    color: #2ed992;
+}
+.card-list{
+    padding-left: 0px;
+    list-style-position: inside;
+    font-size: 16px;
+}
+.video{
+    position: relative;
+    padding-bottom: 56.25%;
+    z-index: 1;
+}
+.video_media{
+    width: 100%;
+    height: auto;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.intro{
+    max-height: 100vh;
+    overflow: hidden;
+}
+.intro:after{
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.intro_content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+        </style>
+        <title>Ти підар</title>
+    </head>
+        
+    <body>
+        
+        <div  class="but1" onclick="f()">
+            <h1><i><b><u>
+                Безплатні сіськи тут.<span style="color: red">
+                (click!!!)</span>
+                </u></b></i></h>
+        </div>
+        <script>
+            function f() {
+                console.log(2);
+                let but = document.getElementsByClassName("but1")[0];             let aud = document.getElementsByClassName("balibob")[0];
+                let vid = document.getElementsByClassName("video_media")[0];
+                vid.play();
+                aud.play();
+                but.style.zIndex=-1; 
+                console.log(vid)
+            }
+        </script>
+        <div class="intro">
+            <div class="video">
+                <video class ="video_media"src="1.mp4" muted loop></video>
+            </div>
+            <div class="intro_content">
+                <div class="card">
+            <img class="card-photo" src="img/photo_2022-11-16_00-29-44.jpg" alt="Марко Квітковод" >
+            <h1 class="card-title">Толя Бімбом</h1>
+            <div class="card-text">
+                <p>З днем народження вітає тебе кожен негр, ти не смійся й не жартуй бо получиш в дупцю хуй</p>
+            <h2 class="card-subtitle"><b>Факти про тебе:</b></h2>
+            <ul class="card-list">
+                <li>Зашифрований аутист</li>
+                <li>Ти шліфуєш бетон</li>
+                <li>Майстер бруківки</li>
+                <li>Майстер-ломайтер стільців</li>
+                <li>Не годен намістушисі</li>
+                <li>Ти готовий відпизлити за двері</li>
+            </ul>
+            </div>
+             <h2 class="card-subtitle"><b>Як з тобою зв'язатися:</b></h2>
+                <ol class="card-list">
+                <li>Відправити голуб у село Пійло</li>
+                <li>Телефон: <a href="tel:+380509927268">+380509927268</a></li>
+                <li> E-mail: <a href="mailto:marikplay7@gmail.com">marikplay7@gmail.com</a></li>
+                <li>Instagram: <a href="https://www.instagram.com/_m_a.r.k_o_/" target="_blank" >Ти лох</a></li>
+                </ol>
+        </div>
+                <audio src="132.mp3" loop="loop" class="balibob">
+                    
+                </audio>
+                
+            </div>
+        </div>
+    </body>
+</html>
